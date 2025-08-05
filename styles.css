@@ -54,28 +54,64 @@ html, body {
     margin: 3rem;
    }
 
+   @media (max-width: 500px) {
+     .DJ {
+        padding-left: 1.65rem !important;
+     }
+   }
 @media (max-width: 650px) {
     html {
-        font-size: 16px !important;
+        font-size: 15.8px !important;
     }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+ 
+    .li1, .li2 {
+        display: none;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr !important;
+    }
+    
 }
 
 @media (min-width: 750px) {
     html {
         font-size: 17px !important;
     }
+
+     .videoo {
+    padding-left: 1rem !important;
+   }
 }
 
 @media (min-width: 850px) {
     html {
         font-size: 18px !important;
     }
+     .videoo {
+    padding-left: 1rem !important;
+   }
 }
 
 @media (min-width: 950px) {
     html {
         font-size: 19px !important;
     }
+     .videoo {
+    padding-left: 0rem !important;
+   }
 }
 
 @media (min-width: 1024px) {
@@ -147,8 +183,6 @@ html, body {
 
 
 
-
-
 /* @media (max-width: 2230px) { */    /*For Medium Screens - Video Section - Two Videos - 1fr 1fr grid*/
   
  /*  .video1 video, .video2 video { 
@@ -217,7 +251,6 @@ html, body {
 
    .videoo {
     grid-template-columns: 1fr !important;
-    padding-left: 3rem !important;
     gap: 3rem !important;
    }
 
@@ -292,7 +325,7 @@ nav ul li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 15rem;
-    padding: 4rem;
+    padding: 3rem;
     place-items: center;
     width: 100%;
     border-radius: 15%;
@@ -401,7 +434,7 @@ ul li:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5rem;
-    padding: 2rem;
+    padding: 0rem;
     place-items: center;
     background: linear-gradient(var(--dj1), var(--dj2));
     width: 100%;
@@ -433,8 +466,9 @@ ul li:hover {
 
 .H3 {
    grid-area: H3;
-   font-size: 2rem;
+   font-size: 1.2rem;
    color: white;
+   margin-bottom: 0;
 }
 
 .Facebook {
@@ -486,7 +520,6 @@ video {
 .videoo {
     width: 100%;
     margin-top: 2rem;
-    padding: 4rem;
     background: linear-gradient(var(--dj1), var(--dj2));
     width: 100%;
     border-radius: 15%;
@@ -496,6 +529,7 @@ video {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     margin-left: 0;
+    padding-bottom: 2rem;
 }
 
 .videoo > div {
@@ -535,5 +569,11 @@ video {
 p:hover {
    transform: scale(1.2);
    transition: transform 0.2 ease;
+}
+
+* {
+  max-width: 100%;
+  height: auto;
+  word-wrap: break-word;  
 }
 
