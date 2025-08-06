@@ -178,8 +178,7 @@ html, body {
      .DJ {
         max-height: 54rem !important;
      }
-
-     
+ 
 }
 
 
@@ -283,6 +282,15 @@ html, body {
         margin-top: 0 !important;
      }
     }
+
+
+    @media  (min-width: 1500px) {
+ 
+     .DJ {
+        max-height: 70rem !important;
+     }
+ 
+}
 
 h1, h2, header p {
    text-align: center;
